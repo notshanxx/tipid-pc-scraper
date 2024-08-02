@@ -13,7 +13,7 @@ app.get("/api", async (req, res) => {
     res.send(items);
   } catch (error) {
     console.error("Error scraping data:", error);
-    res.status(500).send("Error scraping data");
+    res.status(500).send("Error scraping data" + error);
   }
 });
 
